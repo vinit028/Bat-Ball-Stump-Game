@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#heading {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #facc15;
+  text-shadow: 0 0 10px rgba(250, 204, 21, 0.6);
+}
+
+#para {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #49f0b0;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  background-color: rgba(56, 189, 248, 0.15);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+
+.bat-img,
+.ball-img,
+.stump-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  min-height: 1.5em;
+  text-align: center;
+}
+
+#result {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#score {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid #38bdf8;
+  border-radius: 10px;
+  white-space: pre-line;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.reset {
+  margin-top: 25px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  color: #020617;
+  background: linear-gradient(135deg, #f97316, #facc15);
+  transition: all 0.25s ease;
+}
+
+.reset:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(250, 204, 21, 0.5);
+}
+
+@media (max-width: 600px) {
+  #heading {
+    font-size: 2rem;
+  }
+
+  .bat-img,
+  .ball-img,
+  .stump-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .btn {
+    padding: 10px;
+  }
+}
